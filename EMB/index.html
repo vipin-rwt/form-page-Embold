@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<article>
+	<section class="header">
+		<header>
+			<img src="./img/embold-logo.svg" class="emb">
+			<p>RENEE MCKELVEY  <span>Account Setting</span></p>
+			<img src="./img/account.svg" class="acc">
+		</header>
+	</section>
+	
+	<section class="side-nav">
+		<div class="tab">
+			<img src="">
+		</div>
+		<div class="menu">
+			<img src="./img/search.svg">
+			<img src="./img/home.svg">
+			<img src="./img/chart.svg">
+			<img src="./img/switch.svg">
+			<img src="./img/sett.svg">
+			
+		</div>
+		
+	</section>
+
+
+	<section class="user">
+		<div class="upp">
+			<p>User lists</p>
+			<input type="text" name="search" placeholder="search"  class="sear">
+			
+			
+		</div>
+		<div class="tb">
+			<table border="1px" width="70%"  style="table-layout: fixed;">
+				<tr height="10">
+					<th><p>Name</p></th>
+					<th><p>Role</p></th>
+					<th><p>Action</p></th>
+				</tr>
+
+				<tr>
+					<td><p>Ada lovelace</p></td>
+					<td><p>admin</p></td>
+					<td><img src="./img/edit.svg"></td>
+				</tr>
+				<tr>
+					<td><p>grace hopper</p></th>
+					<td><p>developer</p></td>
+					<td><img src="./img/edit.svg"></td>
+				</tr>
+				<tr>
+					<td><p>margaret hamilton</p></td>
+					<td><p>QA</p></td>
+					<td><img src="./img/edit.svg"></td>
+				</tr>
+				<tr>
+					<td><p>joan clarke</p></td>
+					<td><p>manager</p></td>
+					<td><img src="./img/edit.svg"></td>
+				</tr>
+				
+
+			</table>
+		
+		</div>
+	</section>
+
+	
+	<section class="details">
+
+   <div class="prof">
+		<p>Profile Picture</p>
+		  <div class="lin"></div>
+		
+		<p><input type="file" accept="image" name="image" id="file" onchange="loadFile(event)" style="display:none;"></p>
+		<p><img id="output" width="200" height="200" ></p>
+		<div class="lab"><p><label for="file" style="cursor:pointer">Select Image</label></p></div>
+		
+		
+	</div>
+	
+	
+		<section class="use">
+			<p>New User Details</p>
+			
+			<div class="linh"></div>
+		<form>
+			<input type="text" name="" placeholder="Username" required>
+			<input type="email" name="" placeholder="Email" required>
+			<input type="text" name="" placeholder="First name" required>
+			<input type="text" name="" placeholder="Last name" required>
+			<select name="role">
+				<option value="">--select role--</option>
+				<option value="admin">Admin</option>
+				<option value="developer">Developer</option>
+				<option value="manager">Manager</option>
+				<option value="QA">QA</option>
+
+				<p color="black">Send email confirmation<input type="checkbox" name="">
+				</p>
+		</form>
+
+	</section>
+</section>
+<div  class="btn">
+		<input type="submit" value="Add user" target="_blank" class="butto">
+		<input type="submit" value="Cancel" target="_blank"class="butto">
+	</div>
+
+</article>
+
+
+<script type="text/javascript">
+	var loadFile=function(event){
+		var image=document.getElementById('output');
+		image.src=URL.createObjectURL(event.target.files[0]);
+	};
+</script>
+</body>
+</html>
